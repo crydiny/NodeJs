@@ -1,4 +1,4 @@
-var requiredAge = 18;
+var requiredAge = 19;
 
 process.stdout.write("Please enter your age: ");
 process.stdin.setEncoding('utf8');
@@ -7,7 +7,7 @@ process.stdin.on('data', function(data){
 	if(isNaN(age)){
 		console.log('%s is not a valid number', data);
 		console.log('Please enter a valid number: ');
-	}else if(age < 18){
+	}else if(age < 19){
 		console.log('You must be at least %d to enter this bar, ' +
 			'come back here in %d years',
 			requiredAge, requiredAge-age);
